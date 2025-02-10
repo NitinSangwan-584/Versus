@@ -1,0 +1,41 @@
+:root {
+    --text-sm: 12px;
+    --text-base: 14px;
+    --text-xl: 96px;
+    --bg-black-1: #151A1F;
+    --bg-black-2: #0D1012;
+    --color-grey: #4D545E;
+    --bg-yellow: #D4FF27;
+    ;
+
+
+
+}
+
+.text-xl {
+    font-size: var(--text-xl);
+}
+
+.text-base {
+    font-size: var(--text-base);
+}
+
+.text-sm {
+    font-size: var(--text-sm);
+}
+
+.color-grey {
+    color: var(--color-grey);
+}
+
+.bg-black-1 {
+    background-color: var(--bg-black-1);
+}
+
+.bg-black-2 {
+    background-color: var(--bg-black-2);
+}
+
+.bg-yellow {
+    background-color: var(--bg-yellow);
+}
