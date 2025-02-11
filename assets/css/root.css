@@ -1,15 +1,13 @@
 :root {
     --text-sm: 12px;
     --text-base: 14px;
+    --text-md: 36px;
     --text-xl: 96px;
     --bg-black-1: #151A1F;
     --bg-black-2: #0D1012;
+    --bg-black-3: #1F2309;
     --color-grey: #4D545E;
     --bg-yellow: #D4FF27;
-    ;
-
-
-
 }
 
 .text-xl {
@@ -18,6 +16,10 @@
 
 .text-base {
     font-size: var(--text-base);
+}
+
+.text-md {
+    font-size: var(--text-md);
 }
 
 .text-sm {
@@ -34,6 +36,9 @@
 
 .bg-black-2 {
     background-color: var(--bg-black-2);
+}
+.bg-black-3 {
+    color: var(--bg-black-3);
 }
 
 .bg-yellow {
