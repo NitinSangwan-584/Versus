@@ -1,7 +1,6 @@
-const navbarbtn = () => {
-    document.getElementById("name").classList.toggle("show-navbar")
-    document.getElementById("rotates").classList.toggle("rotate-40")
-    document.getElementById("transparent").classList.toggle("bg-transparent")
-    document.getElementById("rotates2").classList.toggle("rotate-45")
-    document.body.classList.toggle("overflow-hidden")
-}
+document.getElementById('video-container').addEventListener('click', function () {
+    this.innerHTML = `<div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/rXsH41KQiTM?autoplay=1" 
+                                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                      </div>`;
+});

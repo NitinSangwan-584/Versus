@@ -53,12 +53,6 @@
     border-bottom-left-radius: 8px;
 }
 
-.valorant {
-    max-width: 78px;
-    height: 24px;
-    border-radius: 48px;
-    background: var(--bg-black-2) !important;
-}
 
 .mt-25 {
     margin-top: 25px;
@@ -67,6 +61,78 @@
 .bg-blur {
     backdrop-filter: blur(40px);
     background: var(--bg-black-2);
+}
+
+/* video-section */
+.compete-btn {
+    padding: 16px 24px;
+    border-radius: 12px;
+    transition: all 0.3s ease-in-out;
+}
+
+.compete-btn:hover {
+    transform: scale(1.05);
+}
+
+.img-thumbnail {
+    position: relative;
+    width: 100%;
+    max-width: 888px;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 21px;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    border-radius: 21px;
+    overflow: hidden;
+}
+
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 21px;
+}
+
+.img-thumbnail img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    object-fit: cover;
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-thumbnail {
+    border-radius: 21px;
+    background-color: unset;
+}
+
+.video-bg {
+    background-image: url(../img/png/Video-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+/* meet */
+.cor-bg {
+    background-image: url(../img/png/Climb-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 16px;
 }
 
 /* section */
@@ -112,9 +178,7 @@
 
 .email::placeholder {
     color: var(--color-grey);
-    /* Adjust to your preferred color */
     opacity: 1;
-    /* Ensure full visibility */
 }
 
 .li:hover {
@@ -124,7 +188,6 @@
 .button {
     border-radius: 12px;
     padding: 12px;
-
 }
 
 .bg-img {
@@ -134,31 +197,21 @@
     background-position: center;
 }
 
-.navbar-link:before {
-    content: '';
-    background: var(--color-sky);
-    display: block;
-    position: absolute;
-    bottom: -3px;
-    left: 0;
-    width: 0;
-    height: 3px;
-    transition: all 0.3s ease-in-out;
+.play-icon {
+    width: 120px;
+    height: 120px;
 }
 
-.menu-lines {
-    width: 30px;
-    height: 5px;
-    margin-bottom: 5px;
-    display: flex;
-    z-index: 10;
-    transition: all 300ms linear;
-    transform-origin: left;
-    border-radius: 10px;
-    background: var(--color-sky);
-    position: relative;
+@media (max-width: 991.98px) {
+    .play-icon {
+        width: 90px;
+        height: 90px;
+    }
 }
 
-.navbar-link:hover::before {
-    width: 100%;
+@media (max-width: 767.98px) {
+    .play-icon {
+        width: 60px;
+        height: 60px;
+    }
 }
