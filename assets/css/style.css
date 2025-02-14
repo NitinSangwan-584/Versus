@@ -63,6 +63,57 @@
     background: var(--bg-black-2);
 }
 
+/* slider */
+.valo-image {
+    max-width: 286px;
+}
+.pt-47{
+    padding-top: 47px;
+}
+.pt-95{
+    padding-top: 95px;
+}
+.section-2-games-box {
+    border-radius: 16px;
+    padding: 16px;
+    background-color: var(--bg-light-black);
+    transition: all 200ms linear;
+    max-width: 318px;
+    width: 286px;
+    height: 304px;
+    transition: all 200ms linear;
+}
+
+.section-2-mx-w-h,
+.section-2-svg {
+    filter: grayscale();
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.section-2-games-box:hover .section-2-mx-w-h {
+    filter: none;
+}
+
+.section-2-games-box:hover .section-2-svg {
+    filter: none;
+}
+
+.section-2-games-box:hover .coming-soon-img {
+    display: none;
+}
+
+.coming-soon-img {
+    left: 0;
+    top: 0;
+}
+
+.game-slider .slick-track {
+    padding-top: 47px;
+    display: flex !important;
+    gap: 25px !important;
+}
+
 /* video-section */
 .compete-btn {
     padding: 16px 24px;
